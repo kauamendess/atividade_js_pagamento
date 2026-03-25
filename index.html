@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Forma de Pagamento</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pagamento</h1>
+
+      <input type="number" id="valor" placeholder="Valor da compra" />
+
+      <select id="pagamento">
+        <option value="">Escolha a forma de pagamento</option>
+        <option value="1">Dinheiro / PIX (10% desconto)</option>
+        <option value="2">Débito (5% desconto)</option>
+        <option value="3">Crédito (sem desconto)</option>
+      </select>
+
+      <button onclick="calcularPagamento()">Calcular</button>
+
+      <p id="resultado"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
